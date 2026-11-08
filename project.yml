@@ -1,0 +1,75 @@
+name: MeroTyperAI
+options:
+  bundleIdPrefix: com.merotyper
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: 87MTU235VN
+    CODE_SIGN_STYLE: Automatic
+    # Whisper Large V3 Turbo needs the Neural Engine to feel instant, so Apple silicon only.
+    ARCHS: arm64
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+packages:
+  ArgmaxOSS:
+    url: https://github.com/argmaxinc/argmax-oss-swift
+    exactVersion: 1.1.1
+targets:
+  MeroTyperAI:
+    type: application
+    platform: macOS
+    sources:
+      - MeroTyperAI
+    dependencies:
+      - package: ArgmaxOSS
+        product: WhisperKit
+    entitlements:
+      path: MeroTyperAI/Resources/MeroTyperAI.entitlements
+      properties:
+        # Not sandboxed: typing into other apps needs Accessibility, which the sandbox blocks.
+        com.apple.security.device.audio-input: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.merotyper.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    info:
+      path: MeroTyperAI/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Mero Typer
+        LSApplicationCategoryType: public.app-category.productivity
+        LSUIElement: true
+        NSHumanReadableCopyright: Copyright © 2026 Jasbin Karki
+        NSMicrophoneUsageDescription: Mero Typer listens only while you hold the dictation key. Speech is turned into text on this Mac.
+  MeroTyperAITests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - MeroTyperAITests
+    dependencies:
+      - target: MeroTyperAI
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.merotyper.app.tests
+schemes:
+  MeroTyperAI:
+    build:
+      targets:
+        MeroTyperAI: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - MeroTyperAITests
+    archive:
+      config: Release

@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11047D0873657242B4498D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B04A4C4AA8C6F10ACC9E79 /* Assets.xcassets */; };
+		1BB6E6408B0A329341C8BFD8 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD248E13214B578AEF92C77 /* Permissions.swift */; };
+		32E1442FFBA9D1D2BEB1B78A /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03064A972710F6ECDB53D2 /* History.swift */; };
+		33F75584E1C7423B9093515F /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D3C70B59E844DD424C1A8 /* HUD.swift */; };
+		663AE798A79748BE9A10F76B /* french.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FC1678CE679B75E1259870C /* french.wav */; };
+		665EE026FC7843B3A4170D35 /* LogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D004CA069FF8A80673F0538 /* LogicTests.swift */; };
+		66D57D13DCA0D5F102605409 /* TranscriberIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9E6827B988CF1B51FF061 /* TranscriberIntegrationTests.swift */; };
+		94F63CEFDDA28B63F7432CA9 /* ModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E3A0EB9A66BAEA41C91D5E /* ModelStore.swift */; };
+		95B78A27EF96823861131B23 /* LiveTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500FDDF7A0D32D09FDEF9A8 /* LiveTyping.swift */; };
+		97B355205532E6AACA6453FD /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541AA4EDF4CFB054E28B3174 /* AppModel.swift */; };
+		9EF38692E6933E5FB9E9FCD9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40EEC82F8EB1B2E415EE5E /* SettingsView.swift */; };
+		A0146BE64614C06F21F82251 /* TextCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07E4E0EB056E6BF3AF7FAA /* TextCleaner.swift */; };
+		A6FFD53A48C369B84CC129F3 /* TextInserter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071C424AD3582B87FE95E7BC /* TextInserter.swift */; };
+		A7A52F967F176C1290BFB8C4 /* ApplePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B143A62711E9BED5A8A7F61A /* ApplePreview.swift */; };
+		BFEDE703F4CF25D3FA3BC405 /* DictationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61AB14525FFF1941E6B8BD5 /* DictationController.swift */; };
+		C467DD1591DE69D5D6CEEB3C /* Transcriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9B37490D651DB055093DD4 /* Transcriber.swift */; };
+		CFE2BA9862D553AF0EC1C3B5 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27B20FF1D472BCA1B8FF53A /* Recorder.swift */; };
+		D41B8898C578CBA34F29D564 /* AppPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1814136623FD4EB78A16489 /* AppPaths.swift */; };
+		E40FEC642865D49C2B010385 /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = E1DDDB5DD32ECC7DC098AF82 /* WhisperKit */; };
+		EB1D62361D6AC5BC53CB3A21 /* Hotkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE35244725B9745307E24257 /* Hotkey.swift */; };
+		EB7A5BD84F183A2812052251 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FBD614642214074833351A /* Preferences.swift */; };
+		ED58119E873A622D1D8E826B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49190EF0F16195FE9913E8 /* MainView.swift */; };
+		EE04BC4F2983EB0EC941E73C /* dictation.wav in Resources */ = {isa = PBXBuildFile; fileRef = 62179018068536D2DC9455D7 /* dictation.wav */; };
+		F09378C710BB6FCD4A7B3B0A /* MeroTyperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D39092A4B94C16275B2EEA /* MeroTyperApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		463568F0EDA86BA74305BAAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45D318DF9328A9BA7C3B18A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15C9126D8BC4296552FC972A;
+			remoteInfo = MeroTyperAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D39092A4B94C16275B2EEA /* MeroTyperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeroTyperApp.swift; sourceTree = "<group>"; };
+		071C424AD3582B87FE95E7BC /* TextInserter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInserter.swift; sourceTree = "<group>"; };
+		0BFB36938E2623AE5466F10D /* MeroTyperAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeroTyperAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B04A4C4AA8C6F10ACC9E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B40EEC82F8EB1B2E415EE5E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3BD9E6827B988CF1B51FF061 /* TranscriberIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriberIntegrationTests.swift; sourceTree = "<group>"; };
+		3C6D3C70B59E844DD424C1A8 /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		541AA4EDF4CFB054E28B3174 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		5A03064A972710F6ECDB53D2 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		5E07E4E0EB056E6BF3AF7FAA /* TextCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCleaner.swift; sourceTree = "<group>"; };
+		62179018068536D2DC9455D7 /* dictation.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dictation.wav; sourceTree = "<group>"; };
+		6B889FBF0109AECDAD95B284 /* MeroTyperAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeroTyperAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D004CA069FF8A80673F0538 /* LogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicTests.swift; sourceTree = "<group>"; };
+		73E3A0EB9A66BAEA41C91D5E /* ModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelStore.swift; sourceTree = "<group>"; };
+		7BD248E13214B578AEF92C77 /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		8524AA126A3992C0C665F065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FC1678CE679B75E1259870C /* french.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = french.wav; sourceTree = "<group>"; };
+		AD9B37490D651DB055093DD4 /* Transcriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcriber.swift; sourceTree = "<group>"; };
+		B143A62711E9BED5A8A7F61A /* ApplePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePreview.swift; sourceTree = "<group>"; };
+		B27B20FF1D472BCA1B8FF53A /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		B500FDDF7A0D32D09FDEF9A8 /* LiveTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTyping.swift; sourceTree = "<group>"; };
+		BE35244725B9745307E24257 /* Hotkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotkey.swift; sourceTree = "<group>"; };
+		C61AB14525FFF1941E6B8BD5 /* DictationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictationController.swift; sourceTree = "<group>"; };
+		D0FD014AB44FD01378FBD9E0 /* MeroTyperAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MeroTyperAI.entitlements; sourceTree = "<group>"; };
+		DA49190EF0F16195FE9913E8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E2FBD614642214074833351A /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		F1814136623FD4EB78A16489 /* AppPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPaths.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9620A910A64EBE95424E468E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40FEC642865D49C2B010385 /* WhisperKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06FD23DDA265068814C2E173 = {
+			isa = PBXGroup;
+			children = (
+				B8456486052BF57732ACB503 /* MeroTyperAI */,
+				7F879E59C9A5BF527B6E5257 /* MeroTyperAITests */,
+				3CBB252F062D7B72D0AAA5F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CBB252F062D7B72D0AAA5F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B889FBF0109AECDAD95B284 /* MeroTyperAI.app */,
+				0BFB36938E2623AE5466F10D /* MeroTyperAITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F879E59C9A5BF527B6E5257 /* MeroTyperAITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D004CA069FF8A80673F0538 /* LogicTests.swift */,
+				3BD9E6827B988CF1B51FF061 /* TranscriberIntegrationTests.swift */,
+				B81D5F496E504CC0B0D19F45 /* Fixtures */,
+			);
+			path = MeroTyperAITests;
+			sourceTree = "<group>";
+		};
+		8283ECCADBCA6D32145D74A4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B143A62711E9BED5A8A7F61A /* ApplePreview.swift */,
+				F1814136623FD4EB78A16489 /* AppPaths.swift */,
+				C61AB14525FFF1941E6B8BD5 /* DictationController.swift */,
+				5A03064A972710F6ECDB53D2 /* History.swift */,
+				BE35244725B9745307E24257 /* Hotkey.swift */,
+				B500FDDF7A0D32D09FDEF9A8 /* LiveTyping.swift */,
+				73E3A0EB9A66BAEA41C91D5E /* ModelStore.swift */,
+				7BD248E13214B578AEF92C77 /* Permissions.swift */,
+				B27B20FF1D472BCA1B8FF53A /* Recorder.swift */,
+				5E07E4E0EB056E6BF3AF7FAA /* TextCleaner.swift */,
+				071C424AD3582B87FE95E7BC /* TextInserter.swift */,
+				AD9B37490D651DB055093DD4 /* Transcriber.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9DEEC7E0A2028DA28B08FAD7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				541AA4EDF4CFB054E28B3174 /* AppModel.swift */,
+				02D39092A4B94C16275B2EEA /* MeroTyperApp.swift */,
+				E2FBD614642214074833351A /* Preferences.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B126D5539D9003095C8FD9F4 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3C6D3C70B59E844DD424C1A8 /* HUD.swift */,
+				DA49190EF0F16195FE9913E8 /* MainView.swift */,
+				1B40EEC82F8EB1B2E415EE5E /* SettingsView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B81D5F496E504CC0B0D19F45 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				62179018068536D2DC9455D7 /* dictation.wav */,
+				9FC1678CE679B75E1259870C /* french.wav */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		B8456486052BF57732ACB503 /* MeroTyperAI */ = {
+			isa = PBXGroup;
+			children = (
+				9DEEC7E0A2028DA28B08FAD7 /* App */,
+				B126D5539D9003095C8FD9F4 /* Features */,
+				DEA33A6795E2752FC195CB33 /* Resources */,
+				8283ECCADBCA6D32145D74A4 /* Services */,
+			);
+			path = MeroTyperAI;
+			sourceTree = "<group>";
+		};
+		DEA33A6795E2752FC195CB33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18B04A4C4AA8C6F10ACC9E79 /* Assets.xcassets */,
+				8524AA126A3992C0C665F065 /* Info.plist */,
+				D0FD014AB44FD01378FBD9E0 /* MeroTyperAI.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15C9126D8BC4296552FC972A /* MeroTyperAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2359A4216BB728A270693E /* Build configuration list for PBXNativeTarget "MeroTyperAI" */;
+			buildPhases = (
+				5DD189621706CEDC7A7239F1 /* Sources */,
+				6BD1269D84DE86B4FBAF9365 /* Resources */,
+				9620A910A64EBE95424E468E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeroTyperAI;
+			packageProductDependencies = (
+				E1DDDB5DD32ECC7DC098AF82 /* WhisperKit */,
+			);
+			productName = MeroTyperAI;
+			productReference = 6B889FBF0109AECDAD95B284 /* MeroTyperAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		350DA0451CEE3362CC4AEE10 /* MeroTyperAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98181D4F728E10D556C5F28D /* Build configuration list for PBXNativeTarget "MeroTyperAITests" */;
+			buildPhases = (
+				C41575B6B44F3821EAADCDC6 /* Sources */,
+				0BE93C0AA5E41F00D4495772 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F8DA1D7C305773197AFA545 /* PBXTargetDependency */,
+			);
+			name = MeroTyperAITests;
+			packageProductDependencies = (
+			);
+			productName = MeroTyperAITests;
+			productReference = 0BFB36938E2623AE5466F10D /* MeroTyperAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45D318DF9328A9BA7C3B18A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					15C9126D8BC4296552FC972A = {
+						DevelopmentTeam = 87MTU235VN;
+						ProvisioningStyle = Automatic;
+					};
+					350DA0451CEE3362CC4AEE10 = {
+						DevelopmentTeam = 87MTU235VN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D564D6359C4C0CF5DA8A7176 /* Build configuration list for PBXProject "MeroTyperAI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 06FD23DDA265068814C2E173;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				591DA2EFE3EDECA3462C4590 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3CBB252F062D7B72D0AAA5F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15C9126D8BC4296552FC972A /* MeroTyperAI */,
+				350DA0451CEE3362CC4AEE10 /* MeroTyperAITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BE93C0AA5E41F00D4495772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE04BC4F2983EB0EC941E73C /* dictation.wav in Resources */,
+				663AE798A79748BE9A10F76B /* french.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BD1269D84DE86B4FBAF9365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11047D0873657242B4498D32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DD189621706CEDC7A7239F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97B355205532E6AACA6453FD /* AppModel.swift in Sources */,
+				D41B8898C578CBA34F29D564 /* AppPaths.swift in Sources */,
+				A7A52F967F176C1290BFB8C4 /* ApplePreview.swift in Sources */,
+				BFEDE703F4CF25D3FA3BC405 /* DictationController.swift in Sources */,
+				33F75584E1C7423B9093515F /* HUD.swift in Sources */,
+				32E1442FFBA9D1D2BEB1B78A /* History.swift in Sources */,
+				EB1D62361D6AC5BC53CB3A21 /* Hotkey.swift in Sources */,
+				95B78A27EF96823861131B23 /* LiveTyping.swift in Sources */,
+				ED58119E873A622D1D8E826B /* MainView.swift in Sources */,
+				F09378C710BB6FCD4A7B3B0A /* MeroTyperApp.swift in Sources */,
+				94F63CEFDDA28B63F7432CA9 /* ModelStore.swift in Sources */,
+				1BB6E6408B0A329341C8BFD8 /* Permissions.swift in Sources */,
+				EB7A5BD84F183A2812052251 /* Preferences.swift in Sources */,
+				CFE2BA9862D553AF0EC1C3B5 /* Recorder.swift in Sources */,
+				9EF38692E6933E5FB9E9FCD9 /* SettingsView.swift in Sources */,
+				A0146BE64614C06F21F82251 /* TextCleaner.swift in Sources */,
+				A6FFD53A48C369B84CC129F3 /* TextInserter.swift in Sources */,
+				C467DD1591DE69D5D6CEEB3C /* Transcriber.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C41575B6B44F3821EAADCDC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665EE026FC7843B3A4170D35 /* LogicTests.swift in Sources */,
+				66D57D13DCA0D5F102605409 /* TranscriberIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F8DA1D7C305773197AFA545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15C9126D8BC4296552FC972A /* MeroTyperAI */;
+			targetProxy = 463568F0EDA86BA74305BAAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3B3E7341AC1F30E3CF94E38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merotyper.app.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeroTyperAI.app/Contents/MacOS/MeroTyperAI";
+			};
+			name = Release;
+		};
+		7F0384D1A3FEDF5AA3AA9A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 87MTU235VN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		969862748300747A9838644A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MeroTyperAI/Resources/MeroTyperAI.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeroTyperAI/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merotyper.app;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DACDFD4F10ECD1410ADDE8A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merotyper.app.tests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeroTyperAI.app/Contents/MacOS/MeroTyperAI";
+			};
+			name = Debug;
+		};
+		DF9C7E0E94CD991C87060511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MeroTyperAI/Resources/MeroTyperAI.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MeroTyperAI/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.merotyper.app;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E44527E16D6907C6EE3A0D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 87MTU235VN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98181D4F728E10D556C5F28D /* Build configuration list for PBXNativeTarget "MeroTyperAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACDFD4F10ECD1410ADDE8A4 /* Debug */,
+				3B3E7341AC1F30E3CF94E38D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D564D6359C4C0CF5DA8A7176 /* Build configuration list for PBXProject "MeroTyperAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44527E16D6907C6EE3A0D65 /* Debug */,
+				7F0384D1A3FEDF5AA3AA9A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA2359A4216BB728A270693E /* Build configuration list for PBXNativeTarget "MeroTyperAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969862748300747A9838644A /* Debug */,
+				DF9C7E0E94CD991C87060511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		591DA2EFE3EDECA3462C4590 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/argmax-oss-swift";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1DDDB5DD32ECC7DC098AF82 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 591DA2EFE3EDECA3462C4590 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 45D318DF9328A9BA7C3B18A0 /* Project object */;
+}
