@@ -1,6 +1,6 @@
 # Mero Typer AI (macOS)
 
-Voice typing for every Mac app. Hold a key, speak, let go: the text is typed where your cursor is. Speech is transcribed on the Mac with OpenAI's Whisper Large V3 Turbo, so audio never leaves it. The only network use is the one-time model download (about 630 MB).
+Voice typing for every Mac app. Hold a key, speak, let go: the text is typed where your cursor is. Speech is transcribed on the Mac with OpenAI's Whisper Large V3 Turbo, so audio never leaves your device. The only network use is the one-time model download (about 630 MB).
 
 ## Requirements
 
